@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    for (let i = 1; i <= 100; i++) {
+        if (isFizzBuzz(i)) {
+            document.write("FizzBuzz" + " ")
+        } else if (isFizz(i)) {
+            document.write("Fizz" + " ")
+        } else if (isBuzz(i)) {
+            document.write("Buzz" + " ")
+        } else {
+            document.write(i + " ")
+        }
+    }
+
+    function isFizz(number) {
+        return number % 3 == 0;
+    }
+
+    function isBuzz(number) {
+        return number % 5 == 0;
+    }
+
+    function isFizzBuzz(number) {
+        return number % 15 == 0;
+    }
+</script>
+</body>
+</html>
